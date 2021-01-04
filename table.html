@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>جدول الدروس</title>
+        <style>
+            body{
+                background: #fffaf0;
+                background-image:url(bac.png);
+                background-attachment: fixed;
+                color:#212529;
+                font-size: 22px;
+                direction: rtl;
+                text-align: center;
+                word-spacing: 4;
+                line-height: 1.8;
+                margin: 15px;
+                font-weight: bold;
+            }
+
+            table{ width: 100%; border-collapse: collapse; text-align: center; }
+            th{background:linear-gradient(#c7505c,  #dab034, #c7505c);}
+            th, td{width:14%;font-weight: bold; padding:10px; border-right:3px solid #fffaf0;}
+            td:nth-child(even){background:linear-gradient(to right, #f5c6cb,  #ffe8a1);}
+            td:nth-child(odd){background:linear-gradient(to left, #f5c6cb,  #ffe8a1);} 
+            #col1{color: #f5c6cb; width: 1px;}
+            #m1,#clear1{ font-size: 20px; display: none; }
+            #b1{ border:3px solid #fffaf0;}
+            /*<td id="b1"><button onclick="f1()"style=" border: none; background: none; font-size: 20px;"> صلاة الجمعة</button></td>
+            function f1(){m1.style.display = "inline"; clear1.style.display = "inline";}*/
+        </style>
+    </head>
+    <body>
+        <div style="font-size: 13px; font-weight: bold;">بسم الله الرحمن الرحيم</div>
+        <h4>جدول الدروس والمحاضرات</h4>
+        <div style="text-align: justify; font-size: 15px;"> * لعرض  المزيد من التفاصيل اضغط علي العنوان </div>
+         <table>
+            <tr>      <th>الأحد</th>       <th>الإثنين</th><th>الثلاثاء</th><th>الأربعاء</th><th>الخميس</th><th>الجمعة</th><th>السبت</th></tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td id="b1"><button onclick="f1()"style=" border: none; background: none; font-size: 20px;"> صلاة الجمعة</button></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>    <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+            <tr>    <td id="col1">-</td>     <td></td>   <td></td>    <td></td>   <td></td>   <td></td>   <td></td>   </tr>
+         </table>
+         <br/>
+         <button onclick="cle()" id="clear1" style="background: none; border: none;"> <img src="x.png"/></button>
+         <br/>
+         <div id="m1">من 1:00 الي 2:00 pm <br/>صلاة الجمعة <br/> </div>
+         
+         <script>
+            function cle(){
+              m1.style.display = "none";
+              clear1.style.display = "none";
+              }
+            function f1(){m1.style.display = "inline"; clear1.style.display = "inline";}
+
+         </script>     
+    </body>
+</html>
