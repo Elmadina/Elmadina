@@ -114,3 +114,5 @@ function showSlidesaa(na) {
   slidesaa[slideIndexaa-1].style.display = "block";  
   dotsa[slideIndexaa-1].className += " active";
 }
+
+
